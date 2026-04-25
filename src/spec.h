@@ -144,10 +144,10 @@ static inline const InstructionInfo *spu_find_instruction_by_opcode(uint8_t opco
 }
 
 /*
- * Video memory format:
+ * Video memory format.
  * Mapped region [SPU_VRAM_BASE, SPU_VRAM_BASE + SPU_VRAM_SIZE).
- * Pixel format for each 32-bit cell is XRGB8888 (0x00RRGGBB).
- * VM publishes this region through SDL texture in XRGB8888 format.
+ * Pixel format for each 32-bit cell is 0x00RRGGBB.
+ * VM shows this region through SDL texture.
  */
 
 #endif
